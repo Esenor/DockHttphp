@@ -1,0 +1,11 @@
+version: '2'
+services:
+  simplehttphp:
+    container_name: simplehttphp
+    hostname: simplehttphp
+    image: simplehttphp
+    build: .
+    ports:
+        - "8128:80"
+    volumes:
+        - ./src/:/var/www/html/
